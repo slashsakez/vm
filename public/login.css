@@ -1,0 +1,182 @@
+@font-face {
+  font-family: "Absans";
+  src: url("fonts/Absans-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Kokoro";
+  src: url("fonts/Kokoro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Maghfirea";
+  src: url("fonts/Maghfirea.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --br: 14.32px; /*border radius value */
+  --white: #fbfbf6;
+  --black: #100e03;
+  --font-absans: "Absans";
+  --font-kokoro: "Kokoro", sans-serif;
+  --font-maghfirea: "Maghfirea", cursive;
+  --divider-value: 1.618;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.login-container {
+  width: 100%;
+  top: 0;
+  padding: 20px;
+  text-align: center;
+  height: 100vh;
+  position: fixed;
+  display: grid;
+  place-content: center;
+  font-family: var(--font-absans);
+  background: rgb(0, 210, 181);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(0, 210, 181, 1) 0%,
+    rgba(188, 191, 134, 1) 0%,
+    rgba(232, 220, 217, 1) 57%,
+    rgba(215, 201, 172, 1) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(0, 210, 181, 1) 0%,
+    rgba(188, 191, 134, 1) 0%,
+    rgba(232, 220, 217, 1) 57%,
+    rgba(215, 201, 172, 1) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(0, 210, 181, 1) 0%,
+    rgba(188, 191, 134, 1) 0%,
+    rgba(232, 220, 217, 1) 57%,
+    rgba(215, 201, 172, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00d2b5",endColorstr="#d7c9ac",GradientType=1);
+  filter: hue-rotate(150deg);
+  background-size: 210%;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  color: #190920;
+  margin-top: -80px;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: -30px;
+  font-family: var(--font-absans);
+}
+/* Stile di base per il menu */
+.dropdown-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(-100%);
+  backdrop-filter: blur(20px);
+  background-color: rgba(249, 249, 249, 0.621);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  z-index: 30;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+/* Stile dei link nel menu */
+.dropdown-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-menu ul li {
+  padding: 10px 20px;
+}
+.dropdown-menu button {
+  margin-top: 30px;
+  font-family: var(--font-absans);
+  background-color: #100e03;
+  color: var(--white);
+  padding: 3px;
+  border-radius: 7px;
+}
+.dropdown-menu ul li a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  font-size: 19px;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+/* Mostrare il menu quando attivo */
+.dropdown-menu.active {
+  transform: translateY(0%);
+}
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: var(--font-absans);
+  letter-spacing: 2px;
+}
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+  display: none; /* Nasconde il messaggio di errore di default */
+}
+nav {
+  background-color: var(--white);
+  height: 49px;
+  width: 100%;
+  border-bottom-left-radius: 22px;
+  border-bottom-right-radius: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: var(--font-maghfirea);
+  position: fixed;
+  top: 0;
+  z-index: 110;
+}
+.title {
+  font-size: 22px;
+  letter-spacing: 0.8px;
+}
+.menu-icon {
+  position: absolute;
+  left: 20px;
+  top: 55%;
+  transform: translateY(-50%);
+}

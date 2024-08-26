@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - Upload Immagini</title>
+    <link rel="stylesheet" href="dashboard.css" />
+    <script src="dashboard.js" defer></script>
+  </head>
+  <body>
+    <div class="dropdown-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">(Coming Soon)</a></li>
+      </ul>
+      <button class="login-btn">Login</button>
+    </div>
+    <main>
+      <nav>
+        <div class="title">Vincenzo Mariani</div>
+        <div class="menu-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="27"
+            fill="none"
+            viewBox="0 0 28 27"
+          >
+            <path
+              stroke="#000"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M5.833 19.125h9.334M5.833 13.5h16.334M5.833 7.875h9.334"
+            />
+          </svg>
+        </div>
+      </nav>
+      <h1>Benvenuto, Vincenzo.</h1>
+      <form id="upload-form" enctype="multipart/form-data">
+        <label for="file-input" class="btn"
+          >Scegli Immagini da caricare nella tua galleria</label
+        >
+
+        <input
+          style="display: none"
+          type="file"
+          id="file-input"
+          name="file"
+          accept="image/*"
+          multiple
+        />
+        <button type="submit">Carica Immagini</button>
+      </form>
+      <div id="upload-status"></div>
+    </main>
+    <script src="menu.js"></script>
+  </body>
+</html>

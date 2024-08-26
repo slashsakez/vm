@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="dashboard.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vincenzo Mariani | Portfolio</title>
+    <link
+      href="https://unpkg.com/filepond/dist/filepond.css"
+      rel="stylesheet"
+    />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src *; font-src *;"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      rel="stylesheet"
+    />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div class="dropdown-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">(Coming Soon)</a></li>
+      </ul>
+      <button class="login-btn">Login</button>
+    </div>
+    <main>
+      <nav>
+        <div class="title">Vincenzo Mariani</div>
+        <div class="menu-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="27"
+            fill="none"
+            viewBox="0 0 28 27"
+          >
+            <path
+              stroke="#000"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M5.833 19.125h9.334M5.833 13.5h16.334M5.833 7.875h9.334"
+            />
+          </svg>
+        </div>
+      </nav>
+      <div class="content-wrapper">
+        <div class="grid">
+          <!-- PHOTO -->
+          <div class="photo-container photo1">
+            <img
+              class="bg-img"
+              src="img/Photo 09-08-24, 10 58 34 AM (2) (1).jpg"
+              alt=""
+            />
+            <div class="photo-info">
+              <span class="photo-place"> France </span>
+              <div class="photo-number">01 <span class="slash">/</span></div>
+            </div>
+          </div>
+
+          <!-- PHOTO -->
+          <div class="photo-container photo2">
+            <img
+              class="bg-img"
+              src="img/Photo 09-08-24, 10 58 34 AM.jpg"
+              alt=""
+            />
+            <div class="photo-info">
+              <span class="photo-place"> France </span>
+              <div class="photo-number">02 <span class="slash">/</span></div>
+            </div>
+          </div>
+
+          <div class="quote-container">
+            seeing the world <br />through my eyes.
+          </div>
+
+          <div class="discover-container">
+            Discover France
+            <span class="with-me"> (with me) </span>
+          </div>
+          <!-- Slider main container -->
+          <section
+            id="image-carousel"
+            class="splide"
+            aria-label="Beautiful Images"
+          >
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <img src="img/Photo 26-08-24, 10 50 34 AM.jpg" alt="" />
+                </li>
+                <li class="splide__slide">
+                  <img src="img/Photo 15-08-24, 11 54 10 AM.jpg" alt="" />
+                </li>
+                <li class="splide__slide">
+                  <img src="img/Photo 15-08-24, 11 53 57 AM.jpg" alt="" />
+                </li>
+              </ul>
+            </div>
+          </section>
+          <div id="photo-gallery">
+            <!-- Photos will be added here dynamically -->
+          </div>
+        </div>
+        <!-- grid div ending -->
+      </div>
+    </main>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
+  <script src="index.js"></script>
+  <script src="menu.js"></script>
+  <script src="script.js"></script>
+</html>
